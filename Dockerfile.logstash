@@ -1,0 +1,7 @@
+FROM docker.elastic.co/logstash/logstash:6.4.2
+
+COPY logstash-config/ /ete/logstash
+
+EXPOSE 9600 8080
+
+CMD ["logstash", "--log.level", "error", "-r", "-f", "/etc/logstash"]
