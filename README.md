@@ -7,7 +7,9 @@ The idea behind this project is to have a service that receives HTTP requests pa
 Documentation on the tools in this repo
 
 Elasticsearch - https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+
 Logstash - https://www.elastic.co/guide/en/logstash/current/index.html
+
 Kibana - https://www.elastic.co/guide/en/kibana/current/index.html
 
 ## Flowchart
