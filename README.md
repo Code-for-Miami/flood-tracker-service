@@ -32,19 +32,6 @@ Open command-line in the folder and run
 docker-compose up -d
 ```
 
-
-## Access the UI
-
-To access the UI go to `http://localhost:5601`
-
-For the first time you access the UI after you already have some information in the DB you would need to configure the index pattern, use the index pattern below:
-
-```
-logstash-*
-```
-
-Docs to configure the index pattern - https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html
-
 ## Send a test request
 
 To send a test request and see the event in Kibana just open command-line and run the following CURL command
@@ -63,6 +50,18 @@ curl -X POST \
 ```
 
 The event will be shown in Kibana, of course you can send as many as you want and try other JSON doecuments.
+
+## Access the UI
+
+To access the UI go to `http://localhost:5601`
+
+For the first time you access the UI after you already have some information in the DB you would need to configure the index pattern, use the index pattern below:
+
+```
+logstash-*
+```
+
+Docs to configure the index pattern - https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html
 
 ## Open tunnel to send information from Particle.io to your local system
 
